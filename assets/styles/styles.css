@@ -1,3 +1,10 @@
 body{
-    background-color: lightsteelblue;
+    background-color: lightsteelblue !important
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+}
+.anchor{
+    text-decoration: none;
 }
