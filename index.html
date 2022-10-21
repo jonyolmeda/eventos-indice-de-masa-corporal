@@ -44,15 +44,22 @@
         </ul>
 
         <h3>If you want to calculate your BMI, try our healthy weight calculator.</h3>
-        <div class="card col-4 gap-3 d-flex justify-content-center">
-            <h5 class="card-header d-flex justify-content-center">Height (in centimeters)</h5>
-            <input class="col-6 d-flex justify-content-center" placeholder="181" type="number">
-            <h5 class="card-header d-flex justify-content-center">Weight (in kilograms)</h5>
-            <input class="col-6 d-flex justify-content-center" placeholder="75" type="number">
-              <a href="#!" class="btn btn-primary col-4 d-flex justify-content-center">Calculate</a>
-            </div>
-          </div>
-          
+
+        <div class="card col-4 gap-3 d-flex justify-content-center">  
+            <form>
+                <label for="input-height">
+                    <h5 class="d-flex justify-content-center">Height (in meters, putting dot)</h5>
+                </label>            
+               <input class="col-6 d-flex justify-content-center" name="Height" id="input-height" placeholder="1.81" type="text">   
+                <label for="input-weight">
+                    <h5 class="d-flex justify-content-center">Weight (in kilograms)</h5>
+                </label>
+                    <input class="col-6 d-flex justify-content-center" name="Weight" id="input-weight" placeholder="75" type="text">
+                    <input type="button" href="#!" class="btn btn-primary col-4" id="boton" value="Calculate"></input>
+                <label for="resultado" id="resultado"></label>
+                </div>          
+            </form>
+        </div>
     </main>
     <footer
       class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top justify-content-evenly"
